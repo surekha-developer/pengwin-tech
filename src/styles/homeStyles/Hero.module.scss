@@ -1,0 +1,214 @@
+
+
+.hero {
+  margin-top: 80px;
+  padding-top: 100px;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-image: url("/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* ===============================
+   Gradient Overlay
+================================ */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(38, 46, 87, 0.85),
+    rgba(0, 200, 255, 0.25),
+    rgba(238, 0, 255, 0.4)
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  z-index: 1;
+}
+
+/* ===============================
+   Floating Squares
+================================ */
+.squares {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    animation: floatSquare linear infinite;
+  }
+
+  span:nth-child(1) { left: 10%; top: 20%; animation-duration: 14s; }
+  span:nth-child(2) { left: 30%; top: 70%; animation-duration: 10s; }
+  span:nth-child(3) { left: 60%; top: 40%; animation-duration: 16s; }
+  span:nth-child(4) { left: 80%; top: 10%; animation-duration: 12s; }
+  span:nth-child(5) { left: 50%; top: 85%; animation-duration: 18s; }
+  span:nth-child(6) { left: 15%; top: 55%; animation-duration: 11s; }
+  span:nth-child(7) { left: 70%; top: 65%; animation-duration: 15s; }
+  span:nth-child(8) { left: 40%; top: 25%; animation-duration: 13s; }
+}
+
+/* ===============================
+   Hero Content
+================================ */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+  color: #ffffff;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation:
+      fadeUp 1.2s ease forwards,
+      headingColorSwap 6s ease-in-out infinite;
+    animation-delay: 0.2s, 1.5s;
+
+    span {
+      color: #00c6ff;
+      animation: spanColorSwap 6s ease-in-out infinite;
+      animation-delay: 1.5s;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.6s;
+  }
+}
+
+/* ===============================
+   CTA Button
+================================ */
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 1s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 1.5px;
+    background: linear-gradient(
+      90deg,
+      #00c6ff,
+      #ff00ff,
+      #00ff00,
+      #ff9900
+    );
+    background-size: 400% 400%;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderRotate 3s linear infinite;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 114, 255, 0.4);
+  }
+
+  &:hover .arrowIcon {
+    transform: translateX(8px);
+  }
+}
+
+/* Arrow Icon */
+.arrowIcon {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* ===============================
+   Animations
+================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes headingColorSwap {
+  0% { color: #ffffff; }
+  50% { color: #00c6ff; }
+  100% { color: #ffffff; }
+}
+
+@keyframes spanColorSwap {
+  0% { color: #00c6ff; }
+  50% { color: #ffffff; }
+  100% { color: #00c6ff; }
+}
+
+@keyframes floatSquare {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1) rotate(180deg); opacity: 0.8; }
+  100% { transform: scale(1.5) rotate(360deg); opacity: 0; }
+}
+
+@keyframes borderRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 768px) {
+  .content h1 { font-size: 2.2rem; }
+  .content p { font-size: 1rem; }
+  .ctaBtn { padding: 12px 40px; }
+}

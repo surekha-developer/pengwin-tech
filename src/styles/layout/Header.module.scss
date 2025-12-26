@@ -1,0 +1,136 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: rgb(211, 239, 241);
+  box-shadow: 0 2px 10px rgba(27, 26, 26, 0.08);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 205px;
+  width: auto;
+  padding-left:0px;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  gap: 30px;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #1d145e;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 5px;
+    display: inline-block; /* ✅ underline fits text only */
+
+    &:hover {
+      color: #d077c7;
+    }
+
+    .underline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #8f73f8;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .underline,
+    &.active .underline {
+      transform: scaleX(1);
+    }
+  }
+
+  a.active {
+    color: #8f73f8;
+  }
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+  // text-align: center;
+
+  span {
+    width: 24px;
+    height: 3px;
+    background: #7a307a;
+    transition: all 0.3s ease;
+  }
+
+  &.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #d5dce4 0%, #abe4e1 50%, #d5dce4 100%);
+    flex-direction: column;
+    align-items: center; /* ✅ left align so underline matches text */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    text-align: left;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0 20px;
+  }
+
+  .nav.open {
+    max-height: 500px;
+    padding: 10px 20px;
+  }
+
+  .nav a {
+    width: auto; /* ✅ no stretching, underline fits text */
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .nav a {
+    font-size: 14px;
+  }
+}
+
+
