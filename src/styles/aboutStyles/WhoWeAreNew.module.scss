@@ -45,31 +45,7 @@
   line-height: 1.2;
   color:white;
 }
-//........
-// .typing {
-//   display: inline-block;
-//   overflow: hidden;               // hide overflowing text
-//   white-space: wrap;            // keep all text in one line
-//   border-right: 3px solid #2ecc71; // cursor
-//   animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
 
-//   /* Adjust font-size if needed to match your heading */
-//   font-weight: 650;
-//   color: white;
-// }
-
-/* Typing effect */
-// @keyframes typing {
-//   from { width: 0 }
-//   to { width: 100% }
-// }
-
-/* Cursor blinking */
-// @keyframes blink {
-//   50% { border-color: transparent }
-//   0%, 100% { border-color: #2ecc71 }
-// }
-//..........
 
 .typing {
   display: inline-block;
@@ -130,4 +106,12 @@
   .content {
     max-width: 100%;
   }
+}
+@media (max-width:400px){
+  .whoSection {
+  position: relative;
+  width: 100%;
+  min-height: 95vh;
+ 
+}
 }

@@ -1,81 +1,9 @@
-// .aboutHero {
-//   position: relative;
-//   width: 100%;
-//   height: 40vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end; /* Text on right side */
-//   overflow: hidden;
-// //   padding-top: 200px;
 
-//   .bgImage {
-//     object-fit: cover;
-//     object-position: center;
-//     z-index: 0;
-//   }
-
-//   .overlay {
-//     position: absolute;
-//     inset: 0;
-//     background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
-//     z-index: 1;
-//   }
-
-//   .content {
-//     position: relative;
-//     z-index: 2;
-//     padding: 0 40px;
-//     color: #fff;
-//     // text-align: left;
-
-//     h1 {
-//       font-size: 2.5rem;
-//       font-weight: 700;
-//       line-height: 1.2;
-//       margin: 0;
-//       color:whitesmoke;
-//       padding-top:100px;
-//     }
-//   }
-// }
-
-// /* Tablet */
-// @media (max-width: 1024px) {
-//   .aboutHero {
-//     height: 35vh;
-
-//     .content {
-//       padding: 0 30px;
-
-//       h1 {
-//         font-size: 2rem;
-//       }
-//     }
-//   }
-// }
-
-// /* Mobile */
-// @media (max-width: 600px) {
-//   .aboutHero {
-//     height: 40vh;
-//     justify-content: center; /* Center text on mobile */
-
-//     .content {
-//       padding: 0 20px;
-//       text-align: center;
-
-//       h1 {
-//         font-size: 1.6rem;
-//       }
-//     }
-//   }
-// }
-//.............
 
 .aboutHero {
   position: relative;
   width: 100%;
-  height: 45vh;
+  height: 48vh;
   display: flex;
   align-items: center;
   justify-content: center; /* Text on right side */
@@ -145,11 +73,12 @@
 /* Mobile */
 @media (max-width: 600px) {
   .aboutHero {
-    height: 40vh;
+    height: 45vh;
     justify-content: center;
 
     .content {
       padding: 0 20px;
+      padding-top:20px;
       text-align: center;
 
       h1 {

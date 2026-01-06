@@ -96,12 +96,13 @@ export default function Header() {
       {/* Logo */}
       <div className={styles.logo}>
         <Image
-          src="/SimplifiedPengwinLogo.png"
+          src="/nobgbluemainlogo.png"
           alt="Pengwin Tech Solutions"
-          width={220}
-          height={90}
+          width={200}
+          height={45}
           priority
         />
+        {/* <Image src="/nobgbluemainlogo.png" alt="Logo" width={200} height={45} /> */}
       </div>
 
       {/* Navigation */}
