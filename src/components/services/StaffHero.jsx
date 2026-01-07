@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function StaffHero({
   heading = "Staff Augmentation",
   description = "At Pengwin Tech Solutions, we help businesses strengthen their teams with skilled professionals exactly when they’re needed. Our expert staff augmentation services provide flexible, reliable talent that enhances productivity, accelerates projects, and drives lasting success",
-  imageSrc = "/digi2.jpg",
+  imageSrc = "/staffimg.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

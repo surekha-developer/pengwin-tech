@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function IoTHero({
   heading = "IoT Solutions",
   description = "At Pengwin Tech Solutions, we help businesses harness the power of IoT to connect devices, streamline operations, and gain real-time insights. Our expert team delivers innovative, customized IoT solutions that enhance efficiency, improve decision-making, and drive lasting success",
-  imageSrc = "/digi2.jpg",
+  imageSrc = "/IotImage.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

@@ -64,11 +64,15 @@ export default function OurStoryExcellence() {
         data-row="2"
       >
         <div className={styles.text}>
-          <h2>Excellence</h2>
+          {/* <h2>Excellence</h2>
           <p>
             Excellence is at the core of everything we do. From clean code to
             scalable architecture, we ensure quality, performance, and long-term
             success for every solution we deliver.
+          </p> */}
+           <h2>Commitment to Quality</h2>
+          <p>
+           Commitment to quality is at the core of everything we do. From clean code to scalable architecture, we ensure performance, reliability, and long-term success for every solution we deliver.
           </p>
         </div>
 

@@ -63,6 +63,7 @@ import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Loader from "@/components/Loader";
 import CustomCursor from "@/components/CustomCursor/CustomCursor";
+import ScrollToTop from "@/components/ScrollTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -97,6 +98,7 @@ export default function RootLayout({ children }) {
         <CustomCursor/>
         {loading && <Loader />}
         {!loading && children}
+        <ScrollToTop />
       </body>
     </html>
   );

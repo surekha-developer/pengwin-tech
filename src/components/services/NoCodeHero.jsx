@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function NoCodeHero({
   heading = "No Code / Low Code",
   description = "At Pengwin Tech Solutions, we help businesses accelerate application development with no-code and low-code solutions. Our expert team delivers flexible, scalable, and customized solutions that simplify processes, reduce time-to-market, and drive lasting success",
-  imageSrc = "/digi2.jpg",
+  imageSrc = "/Nocodeimg.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

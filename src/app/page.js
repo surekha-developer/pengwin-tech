@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import HeroCarousel from "@/components/home/HeroCaro";
 import NeedConsultation from "@/components/home/NeedConsultation";
 import NewAboutHome from "@/components/home/NewAboutHome";
+import NewHero from "@/components/home/NewHero";
 import NewHeroSection from "@/components/home/NewHero";
 import NewServicesHome from "@/components/home/NewServicesHome";
 import NewServicesTimeline from "@/components/home/NewServicesTimeLine";
@@ -20,6 +21,7 @@ import StrengthsSection from "@/components/home/StrengthSection";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
+import NewHeader from "@/components/layout/NewHeaderBluebg";
 import NewAllCardServices from "@/components/services/NewAllCardServices";
 
 
@@ -41,6 +43,7 @@ export default function Home() {
 
 
        {/* //..........goodpattern */}
+       <NewHeader/>
       <NewHeroSection/>
       <NewAboutHome/>
        

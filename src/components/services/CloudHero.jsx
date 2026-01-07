@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function CloudHero({
   heading = "Cloud Services",
   description = "At Pengwin Tech Solutions, we help businesses leverage the power of the cloud to enhance scalability and flexibility. Our expert team delivers secure, customized cloud solutions that optimize operations, improve efficiency, and drive lasting success",
-  imageSrc = "/digi2.jpg",
+  imageSrc = "/cloudimg.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

@@ -13,6 +13,7 @@ import Footer from "@/components/layout/Footer";
 
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
+import NewHeader from "@/components/layout/NewHeaderBluebg";
 
 
 export default function AboutPage() {
@@ -20,7 +21,8 @@ export default function AboutPage() {
 
  
   <>
-<Header/>
+{/* <Header/> */}
+<NewHeader/>
 <AboutHeroNew/>
 <OurStoryExcellence/>
 

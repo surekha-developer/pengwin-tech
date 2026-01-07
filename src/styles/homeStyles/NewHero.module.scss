@@ -8,7 +8,7 @@
 /* ================= HERO ================= */
 .hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 70vh;
   color: #fff;
   padding-bottom: 70px;
 }
@@ -36,212 +36,212 @@
 }
 
 /* ================= TOP BAR ================= */
-.topBar {
-  display: flex;
-  justify-content: center;
-  padding: 10px 60px;
-  background: rgba(10, 25, 60, 0.95);
-  font-size: 13px;
-}
+// .topBar {
+//   display: flex;
+//   justify-content: center;
+//   padding: 10px 60px;
+//   background: rgba(10, 25, 60, 0.95);
+//   font-size: 13px;
+// }
 
-.topInfo {
-  display: flex;
-  gap: 6px;
-}
+// .topInfo {
+//   display: flex;
+//   gap: 6px;
+// }
 
-.cursor {
-  animation: blink 1s infinite;
-}
+// .cursor {
+//   animation: blink 1s infinite;
+// }
 
-@keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
-}
+// @keyframes blink {
+//   0%, 50%, 100% { opacity: 1; }
+//   25%, 75% { opacity: 0; }
+// }
 
 /* ================= HEADER ================= */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 60px;
-  position: relative;
-  z-index: 10;
-}
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 30px 60px;
+//   position: relative;
+//   z-index: 10;
+// }
 
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-}
+// /* Logo */
+// .logo {
+//   display: flex;
+//   align-items: center;
+// }
 
-/* Desktop Navigation */
-.nav {
-  display: flex;
-  gap: 28px;
-}
+// /* Desktop Navigation */
+// .nav {
+//   display: flex;
+//   gap: 28px;
+// }
 
-.nav a {
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  padding-top: 10px;
-  letter-spacing: 1.2px;
-  color:rgb(57, 125, 233);
-}
+// .nav a {
+//   cursor: pointer;
+//   font-size: 15px;
+//   font-weight: 600;
+//   padding-top: 10px;
+//   letter-spacing: 1.2px;
+//   color:rgb(57, 125, 233);
+// }
 
-/* Social Icons */
-.socials {
-  display: flex;
-  gap: 20px;
-}
+// /* Social Icons */
+// .socials {
+//   display: flex;
+//   gap: 20px;
+// }
 
-.socials a {
-  // color: #fff;
-  color:rgb(57, 125, 233);
-  font-size: 22px;
-  transition: color 0.3s;
-  padding-top:10px;
-}
+// .socials a {
+//   // color: #fff;
+//   color:rgb(57, 125, 233);
+//   font-size: 22px;
+//   transition: color 0.3s;
+//   padding-top:10px;
+// }
 
-.socials a:hover {
-  color: #0e2a5c; // or any accent color
-}
+// .socials a:hover {
+//   color: #0e2a5c; // or any accent color
+// }
 
-/* Hamburger */
-.menuBtn {
-  display: none;
-  background: none;
-  border: none;
-  // color: #fff;
-  color:rgb(57, 125, 233);
-  font-size: 28px;
-  cursor: pointer;
-}
+// /* Hamburger */
+// .menuBtn {
+//   display: none;
+//   background: none;
+//   border: none;
+//   // color: #fff;
+//   color:rgb(57, 125, 233);
+//   font-size: 28px;
+//   cursor: pointer;
+// }
 
-.divider {
-  width: 100%;
-  height: 0.1px;       // thickness of line
-  // background: rgba(255, 255, 255, 0.3); // semi-transparent white
-  background: #0e2a5c;
-  margin-top: 0px;   // optional, adjust spacing if needed
-  position: relative;
-  z-index: 10;
-}
+// .divider {
+//   width: 100%;
+//   height: 0.1px;       // thickness of line
+//   // background: rgba(255, 255, 255, 0.3); // semi-transparent white
+//   background: #0e2a5c;
+//   margin-top: 0px;   // optional, adjust spacing if needed
+//   position: relative;
+//   z-index: 10;
+// }
 
 
 
 /* Dropdown */
-.dropdown {
-  position: relative;
-}
+// .dropdown {
+//   position: relative;
+// }
 
-.dropdownToggle {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  color: rgb(57, 125, 233);
-}
+// .dropdownToggle {
+//   display: flex;
+//   align-items: center;
+//   gap: 4px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   font-size: 15px;
+//   font-weight: 600;
+//   color: rgb(57, 125, 233);
+// }
 
-.dropdownMenu {
-  position: absolute;
-  top: 173%;
-  left: 0;
-  right:2;
-  width: 280px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  padding: 10px 10px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
+// .dropdownMenu {
+//   position: absolute;
+//   top: 173%;
+//   left: 0;
+//   right:2;
+//   width: 280px;
+//   background: #fff;
+//   border-radius: 8px;
+//   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+//   padding: 10px 10px;
+//   opacity: 0;
+//   visibility: hidden;
+//   transform: translateY(10px);
+//   transition: all 0.3s ease;
+//   z-index: 1000;
+// }
 
-.dropdownMenu a {
-  display: block;
-  padding: 8px 16px;
-  font-size: 14px;
-  color: #1d145e;
-  text-decoration: none;
-}
+// .dropdownMenu a {
+//   display: block;
+//   padding: 8px 16px;
+//   font-size: 14px;
+//   color: #1d145e;
+//   text-decoration: none;
+// }
 
-.dropdownMenu a:hover {
-  background: rgba(143, 115, 248, 0.1);
-  color: #7a307a;
-}
+// .dropdownMenu a:hover {
+//   background: rgba(143, 115, 248, 0.1);
+//   color: #7a307a;
+// }
 
-.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
+// .show {
+//   opacity: 1;
+//   visibility: visible;
+//   transform: translateY(0);
+// }
 
-/* Mobile menu dropdown */
-.mobileDropdown {
-  width: 100%;
-}
+// /* Mobile menu dropdown */
+// .mobileDropdown {
+//   width: 100%;
+// }
 
 
 
 /* ===================== FIX SERVICES ALIGNMENT ===================== */
-.nav {
-  display: flex;
-  gap: 28px;
-  align-items: center; // make sure all items align vertically
-}
+// .nav {
+//   display: flex;
+//   gap: 28px;
+//   align-items: center; // make sure all items align vertically
+// }
 
-.nav a {
-  display: inline-flex;
-  align-items: center; // center vertically
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 10px 0; // same as Services
-  letter-spacing: 1.2px;
-  color: rgb(57, 125, 233);
-}
+// .nav a {
+//   display: inline-flex;
+//   align-items: center; // center vertically
+//   cursor: pointer;
+//   font-size: 15px;
+//   font-weight: 600;
+//   padding: 10px 0; // same as Services
+//   letter-spacing: 1.2px;
+//   color: rgb(57, 125, 233);
+// }
 
-.dropdown {
-  display: inline-flex;  // like a link
-  align-items: center;   // center with nav links
-  position: relative;
-}
+// .dropdown {
+//   display: inline-flex;  // like a link
+//   align-items: center;   // center with nav links
+//   position: relative;
+// }
 
-.dropdownToggle {
-  display: inline-flex; // important!
-  align-items: center;  // vertical alignment
-  gap: 4px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;  // same as other nav links
-  font-weight: 600;
-  padding: 10px 0;  // match other nav links
-  color: rgb(57, 125, 233);
-}
+// .dropdownToggle {
+//   display: inline-flex; // important!
+//   align-items: center;  // vertical alignment
+//   gap: 4px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   font-size: 15px;  // same as other nav links
+//   font-weight: 600;
+//   padding: 10px 0;  // match other nav links
+//   color: rgb(57, 125, 233);
+// }
 
 
 /* ================= MOBILE MENU ================= */
-.mobileMenu {
-  position: absolute;
-  top: 110px;
-  left: 0;
-  width: 100%;
-  background: rgba(10, 25, 60, 0.98);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 0;
-  gap: 18px;
-  z-index: 20;
-}
+// .mobileMenu {
+//   position: absolute;
+//   top: 110px;
+//   left: 0;
+//   width: 100%;
+//   background: rgba(10, 25, 60, 0.98);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 24px 0;
+//   gap: 18px;
+//   z-index: 20;
+// }
 
 /* ================= HERO CONTENT ================= */
 .content {
@@ -264,6 +264,7 @@
   max-width: 700px;
   /* optional fade-in for smooth effect */
   animation: fadeIn 0.5s ease-in;
+  padding-top:75px;
 }
 
 @keyframes fadeIn {
@@ -433,6 +434,15 @@
 
 
 @media (max-width: 640px) {
+  .hero {
+  // position: relative;
+  min-height: 30vh;
+  // color: #fff;
+  // padding-bottom: 70px;
+}
+  .heading{
+     padding-top:45px;
+  }
   .header {
     padding: 16px 24px;
   }
