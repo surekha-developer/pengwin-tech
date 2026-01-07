@@ -1,5 +1,5 @@
 import OurClients from "@/components/home/OurClients";
-import Header from "@/components/layout/Header";
+
 import NewFooter from "@/components/layout/NewFooter";
 import NewHeader from "@/components/layout/NewHeaderBluebg";
 
@@ -12,10 +12,10 @@ export default function ServicesMiddleWare() {
 
  
   <>
-{/* <Header/> */}
+
 <NewHeader/>
 <MiddleWareHero/>
-{/* <div>need to do some section here</div> */}
+
 <MiddleWareThree/>
 <WouldConnect/>
 <OurClients/>

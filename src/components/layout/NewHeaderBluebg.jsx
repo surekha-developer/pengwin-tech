@@ -67,13 +67,18 @@ export default function NewHeader() {
                 <Link href="/services/no-code-low-code">No Code / Low Code</Link>
               </div> */}
 <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.show : ""}`}>
-  <Link href="/services/digital-transformation" className={styles.dropdownItem}>
-    <span>Digital Transformation</span>
+  <Link href="/services" className={styles.dropdownItem}>
+    <span>View All Services</span>
     <GoArrowUpRight />
   </Link>
+ 
 
   <Link href="/services/middleware-integrations" className={styles.dropdownItem}>
     <span>Middleware Integrations</span>
+    <GoArrowUpRight />
+  </Link>
+   <Link href="/services/digital-transformation" className={styles.dropdownItem}>
+    <span>Digital Transformation</span>
     <GoArrowUpRight />
   </Link>
 
@@ -102,10 +107,10 @@ export default function NewHeader() {
     <GoArrowUpRight />
   </Link>
 
-  <Link href="/services" className={styles.dropdownItem}>
+  {/* <Link href="/services" className={styles.dropdownItem}>
     <span>View All Services</span>
     <GoArrowUpRight />
-  </Link>
+  </Link> */}
 </div>
 
 
@@ -242,14 +247,15 @@ export default function NewHeader() {
                 <span>View All Services</span>
                 <GoArrowUpRight />
               </Link>
-              <Link href="/services/digital-transformation" className={styles.dropdownItem}>
+                <Link href="/services/digital-transformation" className={styles.dropdownItem}>
                 <span>Digital Transformation</span>
-                <GoArrowUpRight />
               </Link>
+            
               <Link href="/services/middleware-integrations" className={styles.dropdownItem}>
                 <span>Middleware Integrations</span>
                 <GoArrowUpRight />
               </Link>
+              
               <Link href="/services/software-consulting" className={styles.dropdownItem}>
                 <span>Software Consulting</span>
                 <GoArrowUpRight />

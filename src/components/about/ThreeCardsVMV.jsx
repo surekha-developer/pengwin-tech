@@ -135,7 +135,7 @@ const cards = [
   },
 ];
 
-export default function VisionMissionValuesCards() {
+export default function VisionMissionValues() {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);

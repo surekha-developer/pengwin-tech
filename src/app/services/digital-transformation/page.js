@@ -1,5 +1,5 @@
 import OurClients from "@/components/home/OurClients";
-import Header from "@/components/layout/Header";
+
 import NewFooter from "@/components/layout/NewFooter";
 import NewHeader from "@/components/layout/NewHeaderBluebg";
 import DigitalHero from "@/components/services/DigitalHero";
@@ -11,10 +11,10 @@ export default function ServicesDigitalTransformation() {
 
  
   <>
-{/* <Header/> */}
+
 <NewHeader/>
 <DigitalHero/>
-{/* <div>need to do some section here</div> */}
+
 <DigiThree/>
 <WouldConnect/>
 <OurClients/>

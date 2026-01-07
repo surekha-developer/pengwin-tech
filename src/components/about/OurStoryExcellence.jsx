@@ -38,7 +38,7 @@ export default function OurStoryExcellence() {
       >
         <div className={styles.image}>
           <Image
-            src="/Story.jpg"
+            src="/idea.jpeg"
             alt="Our Story"
             width={200}
             height={200}
@@ -78,7 +78,7 @@ export default function OurStoryExcellence() {
 
         <div className={styles.image}>
           <Image
-            src="/Excellance.jpg"
+            src="/commitmentQuality.jpg"
             alt="Excellence"
             width={200}
             height={200}
