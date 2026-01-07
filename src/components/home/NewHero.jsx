@@ -314,6 +314,7 @@ export default function NewHeroSection() {
                 servicesOpen ? styles.show : ""
               }`}
             >
+               <Link href="/services">View All Services</Link>
               <Link href="/services/digital-transformation">
                 Digital Transformation
               </Link>
@@ -371,7 +372,8 @@ export default function NewHeroSection() {
                 </button>
                 {servicesOpen && (
                   <div className={styles.dropdownMenu}>
-                     <Link href="/services">View All Services</Link>
+                     {/* <Link href="/services">View All Services</Link> */}
+                      <Link href="/services">View All Services</Link>
                     <Link href="/services/digital-transformation">
                       Digital Transformation
                     </Link>
