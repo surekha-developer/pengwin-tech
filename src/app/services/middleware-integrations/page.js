@@ -1,3 +1,4 @@
+import OurClients from "@/components/home/OurClients";
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
 
@@ -13,6 +14,7 @@ export default function ServicesMiddleWare() {
 <MiddleWareHero/>
 <div>need to do some section here</div>
 <WouldConnect/>
+<OurClients/>
 <NewFooter/>
   </>
    )

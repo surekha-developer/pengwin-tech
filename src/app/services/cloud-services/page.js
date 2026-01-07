@@ -1,3 +1,4 @@
+import OurClients from "@/components/home/OurClients";
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
 import CloudHero from "@/components/services/CloudHero";
@@ -16,6 +17,7 @@ export default function ServicesCloud() {
 <CloudHero/> */}
 <div>need to do some section here</div>
 <WouldConnect/>
+<OurClients/>
 <NewFooter/>
   </>
    )

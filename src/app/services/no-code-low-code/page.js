@@ -1,3 +1,4 @@
+import OurClients from "@/components/home/OurClients";
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
 import DigitalHero from "@/components/services/DigitalHero";
@@ -14,6 +15,7 @@ export default function ServicesNoCode() {
 <NoCodeHero/>
 <div>need to do some section here</div>
 <WouldConnect/>
+<OurClients/>
 <NewFooter/>
   </>
    )
