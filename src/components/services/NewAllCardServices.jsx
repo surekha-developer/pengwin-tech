@@ -31,7 +31,7 @@ const services = [
   },
   {
     id: 4,
-    image: "/digi.jpg",
+    image: "/cloudimg.jpg",
     title: "Cloud Services",
     desc:
       "We help businesses leverage secure, scalable cloud solutions to improve performance, reduce costs, and enable faster innovation",
@@ -39,7 +39,7 @@ const services = [
   },
   {
     id: 5,
-    image: "/digi.jpg",
+    image: "/staffimg.jpg",
     title: "Staff Augmentation",
     desc:
       "We provide skilled professionals to seamlessly extend your team and accelerate project delivery with the right expertise",
@@ -47,7 +47,7 @@ const services = [
   },
   {
     id: 6,
-    image: "/digi.jpg",
+    image: "/IotImage.jpg",
     title: "IoT Solutions",
     desc:
       "We design and implement smart IoT solutions that connect devices, collect real-time data, and drive intelligent business decisions",
@@ -55,7 +55,7 @@ const services = [
   },
   {
     id: 7,
-    image: "/digi.jpg",
+    image: "/Nocodeimg.jpg",
     title: "No Code / Low Code",
     desc:
       "We empower businesses to build applications faster with no-code and low-code platforms, reducing development time and operational costs",
