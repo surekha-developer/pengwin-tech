@@ -1,23 +1,22 @@
+
+
 // .clientsSection {
 //   padding: 90px 0;
 //   scroll-margin-top: 100px;
-//   //  background: linear-gradient(135deg, #f6f5f2, #f6f5f2);
-//   // background:rgb(211, 239, 241);
-//   background:white;
+//   background: white;
+//   // gap:50px;
 // }
 
 // /* CENTER HEADING */
 // .headingWrapper {
 //   text-align: center;
 //   margin-bottom: 40px;
-//    display: flex;
-//     // align-items: center;
-//     justify-content: center;
+//   display: flex;
+//   justify-content: center;
 
 //   .headingImg {
 //     width: clamp(180px, 25vw, 320px);
 //     height: auto;
-   
 //   }
 // }
 
@@ -25,25 +24,25 @@
 // .grid {
 //   display: grid;
 //   grid-template-columns: repeat(3, 1fr);
-//   gap: 0px;
+//   gap: 10px;
 //   max-width: 1400px;
 //   margin: 0 auto;
 
-//   /* last image (7th) should be centered in desktop */
+//   /* 7th image centered on desktop */
 //   .lastCenter {
-//     grid-column: 2 / 3; /* middle column of 3 */
+//     grid-column: 2 / 3;
 //   }
 
-//   @media (max-width: 1024px) {   /* Tablet */
+//   @media (max-width: 1024px) {
 //     grid-template-columns: repeat(2, 1fr);
 
 //     .lastCenter {
-//       grid-column: 1 / -1; /* full width */
+//       grid-column: 1 / -1;
 //       justify-self: center;
 //     }
 //   }
 
-//   @media (max-width: 600px) {   /* Mobile */
+//   @media (max-width: 600px) {
 //     grid-template-columns: repeat(1, 1fr);
 
 //     .lastCenter {
@@ -52,17 +51,18 @@
 //   }
 // }
 
-// /* CLIENT BOX STYLE */
+// /* CLIENT BOX */
 // .clientBox {
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
-//   margin-bottom:20px;
+//   margin-bottom: 20px;
 
 //   img {
 //     width: clamp(120px, 20vw, 180px);
 //     height: auto;
 //     transition: transform 0.3s ease;
+//     object-fit: contain;
 //   }
 
 //   &:hover img {
@@ -70,27 +70,34 @@
 //   }
 // }
 
+// /* 🔥 ONLY Affidi logo larger */
+// .largeLogo {
+//   img {
+//     // width: clamp(160px, 26vw, 230px);
+//     width: clamp(160px, 26vw, 300px);
+//   }
+// }
 
-// //......
-
-// /* Initial hidden state */
+// /* ANIMATION */
 // .clientBox {
 //   opacity: 0;
 //   transform: translateY(40px) scale(0.95);
 //   transition: opacity 0.6s ease, transform 0.6s ease;
 // }
 
-// /* Visible animation */
 // .visible {
 //   opacity: 1;
 //   transform: translateY(0) scale(1);
 // }
-//................
+//...............
+
+
 
 .clientsSection {
   padding: 90px 0;
   scroll-margin-top: 100px;
   background: white;
+  // gap:50px;
 }
 
 /* CENTER HEADING */
@@ -107,33 +114,81 @@
 }
 
 /* GRID LAYOUT */
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 10px;
+//   max-width: 1400px;
+//   margin: 0 auto;
+
+//   /* 7th image centered on desktop */
+//   .lastCenter {
+//     grid-column: 2 / 3;
+//   }
+
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  // gap: 20px;
   max-width: 1400px;
   margin: 0 auto;
 
-  /* 7th image centered on desktop */
-  .lastCenter {
-    grid-column: 2 / 3;
-  }
+  /* 5th, 6th, 7th items → second row centered */
+  // .clientBox:nth-child(5) {
+  //   grid-column: 2;
+  // }
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
+  // .clientBox:nth-child(6) {
+  //   grid-column: 3;
+  // }
 
-    .lastCenter {
-      grid-column: 1 / -1;
-      justify-self: center;
-    }
-  }
+  // .clientBox:nth-child(7) {
+  //   grid-column: 4;
+  // }
 
+
+.clientBox:nth-child(5),
+.clientBox:nth-child(6),
+.clientBox:nth-child(7) {
+  transform: translateX(50%) translateY(40px) scale(0.95);
+}
+
+/* When visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* visible + stagger */
+.clientBox:nth-child(5).visible,
+.clientBox:nth-child(6).visible,
+.clientBox:nth-child(7).visible {
+  transform: translateX(50%) translateY(0) scale(1);
+}
+
+
+ 
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
+    gap:20px;
 
     .lastCenter {
-      grid-column: auto;
+      grid-column: auto !important;
     }
+
+      .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .clientBox {
+    transform: translateY(40px) scale(0.95) !important;
+  }
+
+  .visible {
+    transform: translateY(0) scale(1) !important;
+  }
   }
 }
 
