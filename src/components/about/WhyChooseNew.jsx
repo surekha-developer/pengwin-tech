@@ -270,6 +270,7 @@ useEffect(() => {
     "Rapid adoption of any new technology for client success",
     "We started locally, but our solutions now serve global clients",
     "22+ Years of leadership experience in Sales & Business Strategy",
+    "Fast execution without compromising code quality, security, or best practices"
   ];
 
   const [stats, setStats] = useState(statsData.map(() => 0));
