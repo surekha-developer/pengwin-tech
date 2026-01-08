@@ -64,6 +64,8 @@ import "./globals.scss";
 import Loader from "@/components/Loader";
 import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import ScrollToTop from "@/components/ScrollTop";
+import WhatsAppButton from "@/components/Wtsapp";
+import Twobuttons from "@/components/Twobuttons";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -98,7 +100,9 @@ export default function RootLayout({ children }) {
         <CustomCursor/>
         {loading && <Loader />}
         {!loading && children}
-        <ScrollToTop />
+        {/* <ScrollToTop />
+         <WhatsAppButton /> */}
+         <Twobuttons/>
       </body>
     </html>
   );
