@@ -739,8 +739,9 @@
   .main {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 60px 20px;
-    gap:50px;
+    padding: 50px 20px;
+    gap:15px;
+
   }
 
   // .main {
@@ -768,14 +769,90 @@
 }
 
 /* Keep services in 2 columns even on mobile */
+// @media (max-width: 600px) {
+//   .services {
+//     gap: 20px;
+//   }
+//   // .serviceLists {
+//   //   grid-template-columns: 1fr;
+//   //   gap: 20px;
+//   // }
+
+//   .serviceColumn h4 {
+//     font-size: 15px;
+//   }
+
+//   .serviceColumn li {
+//     font-size: 13px;
+//   }
+// }
+
+//..........
+// @media (max-width: 600px) {
+//   .services {
+//     gap: 20px;
+//   }
+
+//   .serviceLists {
+//     grid-template-columns: 1fr; /* stack items vertically */
+//     gap: 15px; /* optional spacing between lists */
+//   }
+
+//   .serviceColumn h4 {
+//     font-size: 15px;
+//   }
+
+//   .serviceColumn li {
+//     font-size: 13px;
+//   }
+// }
+//...............
+
+// @media (max-width: 600px) {
+//   .services {
+//     gap: 20px;
+//     // text-align: left; /* ensures headings align left */
+//   }
+
+//   .serviceLists {
+//     grid-template-columns: 1fr; /* stack lists vertically */
+//     // gap: 15px;
+//   }
+
+//   .serviceLists ul {
+//     text-align: left;  /* left-align the list items */
+//     margin: 0 auto;    /* optional: keeps the lists centered as a block */
+//     // padding-left: 0;   /* removes default ul padding if needed */
+//   }
+
+//   .serviceColumn h4 {
+//     font-size: 15px;
+//   }
+
+//   .serviceColumn li {
+//     font-size: 13px;
+//   }
+// }
+
+//...........
+
 @media (max-width: 600px) {
   .services {
-    gap: 20px;
+    gap: 0px;
+    // text-align: left;
   }
-  // .serviceLists {
-  //   grid-template-columns: 1fr;
-  //   gap: 20px;
-  // }
+
+  .serviceLists {
+    grid-template-columns: 1fr; /* stack lists vertically */
+    // gap: 15px;
+  }
+
+  .serviceLists ul {
+    text-align: left;      /* left-align list items */
+    margin: 0 auto;             /* remove default top/bottom margin */
+    // padding-left: 20px;    /* consistent left padding for all lists */
+    // list-style-position: inside; /* ensures bullets align nicely */
+  }
 
   .serviceColumn h4 {
     font-size: 15px;
@@ -783,5 +860,7 @@
 
   .serviceColumn li {
     font-size: 13px;
+    // margin-bottom: 8px;    /* spacing between items */
   }
 }
+
