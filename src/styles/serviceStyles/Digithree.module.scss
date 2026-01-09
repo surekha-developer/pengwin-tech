@@ -5,10 +5,11 @@
    HERO SECTION
 ========================= */
 .hero {
-  // max-width: 1450px;
-  min-height: 60vh;
+  max-width: 1450px;
+  min-height: 55vh;
   padding: 0rem 4rem;
   padding-top:0px;
+  padding-bottom:50px;
   
   display: flex;
   align-items: center;
@@ -35,6 +36,7 @@
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1.1rem;
+    font-style: italic;
   }
 
   p {
@@ -55,6 +57,7 @@
 
 .cubeWrapper {
   perspective: 1200px;
+  
 }
 
 .cube {
@@ -63,6 +66,7 @@
   height: 260px;
   transform-style: preserve-3d;
   animation: rotateY 12s linear infinite;
+  padding-left: 0px;
 }
 
 /* 6 faces */
@@ -134,7 +138,11 @@
 @media (max-width: 1200px) {
   .content {
      max-width: 500px;
+      h1 {
+      font-size: 1.8rem;
+    }
   }
+  
 }
 
 
@@ -191,6 +199,10 @@
 @media (max-width: 900px) {
   .content {
      max-width: 800px;
+     h1{
+      // text-align: center;
+      font-size: 1.7rem;
+     }
   }
    .hero {
     // padding: 3.5rem 1.5rem;

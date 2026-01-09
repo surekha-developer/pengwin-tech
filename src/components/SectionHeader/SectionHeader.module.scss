@@ -89,12 +89,20 @@
 }
 
 
-
+@media (max-width: 1024px) {
+  .sectionHeader{
+    padding-top: 50px;
+  }
+}
 
 /* Responsive */
 @media (max-width: 640px) {
+  .sectionHeader{
+    padding-top: 30px;
+  }
   .sectionHeader h2 {
     font-size: 32px;
+     
   }
   .sectionHeader p {
     font-size: 14px;
