@@ -39,6 +39,8 @@ export default function NewHeader() {
 
   return (
     <header className={styles.header}>
+      <div className="appContainer">
+        <div className={styles.headerInner}>
       {/* Logo */}
       <div className={styles.logo}>
         <Link href="/">
@@ -323,8 +325,8 @@ export default function NewHeader() {
   </div>
 )}
 
-
-
+</div>
+</div>
     </header>
   );
 }

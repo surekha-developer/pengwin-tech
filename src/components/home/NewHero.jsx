@@ -317,6 +317,7 @@ export default function NewHeroSection() {
       <div className={styles.divider}></div>
 
       {/* Hero Content */}
+      <div className="appContainer">
       <div className={styles.content}>
         <h1
           className={styles.heading}
@@ -328,6 +329,7 @@ export default function NewHeroSection() {
         <Link href="/services" className={styles.secondaryBtn}>
           Explore Our Services
         </Link>
+      </div>
       </div>
 
       {/* Floating Cards */}

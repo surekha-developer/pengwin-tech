@@ -16,6 +16,25 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   // max-width: 1300px;
 }
+.header > * {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0e2a5c;
+  z-index: 1000;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* Page content spacing */
 body {
@@ -226,7 +245,7 @@ body {
 @media (max-width: 1024px) {
   .header{
     justify-content: space-between;
-    padding:30px 60px;
+    // padding:30px 60px;
   }
 .logo img {
     width: 170px; /* smaller on tablet */
