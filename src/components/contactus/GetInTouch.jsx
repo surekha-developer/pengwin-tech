@@ -185,7 +185,12 @@ export default function GetInTouch() {
 
       {/* Right Side Form */}
       <div className={styles.right}>
-        <h2>Get in Touch</h2>
+          <h2 className={styles.typing}>Get in Touch</h2>
+
+  <p className={styles.subText}>
+    Have a question or a project in mind? Fill out the form and our team will get
+    back to you shortly.
+  </p>
         <form className={styles.contactForm} onSubmit={handleSubmit}>
           <div className={styles.field}>
             <input name="name" placeholder="Your Full Name" required />
