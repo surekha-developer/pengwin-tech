@@ -44,7 +44,7 @@ export default function NewHeader() {
       {/* Logo */}
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/imageswebp/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
+          <Image src="public/imageswebp/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
         </Link>
       </div>
 
